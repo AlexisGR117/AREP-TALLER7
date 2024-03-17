@@ -61,7 +61,7 @@ public class LoginService {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 5000; //returns default port if heroku-port isn't set (i.e. on localhost)
+        return 8087; //returns default port if heroku-port isn't set (i.e. on localhost)
     }
 
     /**
@@ -99,7 +99,7 @@ public class LoginService {
      * @throws IOException Si ocurre un error al leer o escribir datos.
      */
     public static String readURL(String query) throws IOException {
-        URL siteURL = new URL("https://localhost:5002/user?" + query);
+        URL siteURL = new URL("https://localhost:8088/user?" + query);
         URLConnection urlConnection = siteURL.openConnection();
         Map<String, List<String>> headers = urlConnection.getHeaderFields();
         Set<Map.Entry<String, List<String>>> entrySet = headers.entrySet();

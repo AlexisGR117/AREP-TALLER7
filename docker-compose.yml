@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  loginservice:
+    build:
+      context: .
+      dockerfile: DockerfileLoginService
+    container_name: LoginService
+    ports:
+      - "8087:6000"
+  usersservice:
+    build:
+      context: .
+      dockerfile: DockerfileUsersService
+    container_name: UsersService
+    ports:
+      - "8088:6001"
+
