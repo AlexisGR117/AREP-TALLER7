@@ -13,7 +13,7 @@ Estas instrucciones te ayudarán a obtener una copia del proyecto en funcionamie
 * Kit de desarrollo de Java (JDK) versión 11 o posterior
 * Herramienta de construcción Maven
 
-### Instalar y Generar las imágenes
+### Instalar y Ejecutar
 
 1. Clona el repositorio:
     ```
