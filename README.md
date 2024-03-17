@@ -34,7 +34,7 @@ Estas instrucciones te ayudarán a obtener una copia del proyecto en funcionamie
    ```
    java -cp target/AREP-TALLER7-1.0-SNAPSHOT.jar edu.eci.arep.UsersService
    ```
-5. Abre un navegador web y accede a la aplicación en http://localhost:8087/login.html.
+5. Abre un navegador web y accede a la aplicación en https://localhost:8087/login.html.
 
 
 ### Ejecutando las pruebas
@@ -129,6 +129,8 @@ En el video se podrá ver cómo se hizo el despliegue en AWS y las pruebas corre
 * LoginService responde con un objeto JSON indicando si la autenticación del usuario fue exitosa o no.
 * El cliente web (navegador) tiene un campo para ingresar el nombre de usuario y otro para la contraseña, y un botón para iniciar sesión. Cada vez que el usuario envía las credenciales, el navegador las envía al servicio LoginService y actualiza la pantalla con la respuesta en formato JSON.
 * El servicio LoginService implementa una comunicación segura con el servicio UsersService utilizando HTTPS.
+
+[![Video de YouTube](https://img.youtube.com/vi/Q684C9EKlNw/sddefault.jpg)](https://www.youtube.com/watch?v=Q684C9EKlNw)
 
 ## Authors
 
